@@ -1,112 +1,30 @@
-// // 1 Переменные
-// const firstName = 'Maksimka'// Приоритет
-// var name = 'Maxilen' // Не использовать
-// //let age = 25  
+// Number
+const num = 42 //Integer
+const float = 24.24 //float
+const pow = 10e3 //
+console.log(pow)
+console.log('MAX_SAFE_INTEGER ', Number.MAX_SAFE_INTEGER)
+console.log(Math.pow(2, 53,) - 1)
+console.log('MIN_SAFE_INTEGER', Number.MIN_SAFE_INTEGER)
+console.log('MAX_VALUE', Number.MAX_VALUE)
+console.log('MIN_VALUE', Number.MIN_VALUE)
+console.log('POSITIVE_INFINITY', Number.POSITIVE_INFINITY)
+console.log('NEGATIVE_INFINITY', Number.NEGATIVE_INFINITY)
+console.log('Nan', Number.NaN)
+const weird = 2 / undefined
+console.log(Number.isNaN(weird))
+console.log(Number.isFinite(42))
 
-// name = 'maks'
-// console.log(name)
-
-
-// const _private = 'private'
-// const $ = 'some value'
-// const with5 = '5'
-// //const 5with = '5' err
-
-// //2 Мутирование
-// console.log('Имя человека:' + firstName + ', возраст:')
-// const lastMame = prompt('Введите фамилию')
-// alert(firstName + ' ' + lastMame)
-
-//Операторы
-const currentYear = 2020
-const birthYear = 1996
-const age = currentYear - birthYear
-console.log(age)
-
-// Типы данных
-const isProgrammer = true
-const myname = 'Max'
-const time = 15.23
-let x
+const stringint = '40'
+const stringFloat = '40.42'
+console.log(stringint + 2)
+console.log(Number.parseInt(stringint) + 2)
+console.log(Number(stringint) + 2)
+console.log(+stringint + 2)
 
 
-console.log(typeof isProgrammer)
-console.log(typeof time)
-console.log(typeof myname)
-console.log(typeof x)
-console.log(null)
-
-//Приоритет операторов
-const fullAge = 25
-const birthday = 1996
-const current = 2021
-
-const isFullAge = (current - birthday) >= fullAge
-console.log(isFullAge)
-
-// Условные операторы
-
-const status = 'pending' // ready, fail, pending
-if (status === 'ready') {
-console.log('курс готов')
-}
-else if (status === 'pending') {
-    console.log('курс в процессе')
-}
-else {console.log('Курс не получился')
-}
-
-const isReady = true
-// if (isReady ) {
-//     console.log('Все готово')
-// }
-// else {console.log('Не готово')
-// }
-isReady ? console.log('Все готово') : console.log('Не готово') // Тернарное выражение
-
-// Булевая логика
-
-// Функции
-
-function calculateAge(Year) {
-    return 2021 - Year
-}
-//  const myAge = calculateAge(1996)
-//  console.log(myAge)
-
-//  или
+console.log(Number.parseFloat(stringFloat) + 2)
 
 
-  function logInfoAbout(name, Year) {
-      const Age = calculateAge(Year)
-Age > 0 ? console.log('Пользователь ' + name + ' имеет возраст ' + Age) : console.log('Так-то это будующее!!!')
-  }
-  logInfoAbout('Max' , 1996)
- 
 
-  // Массивы
-//    const cars = ['Мазда', 'BMW', 'Ford']
-  
 
-// const cars = new Array('Mazda', 'BMW', 'Ford')
-// console.log(cars)
-// console.log(cars[1])
-// console.log(cars.length)
-
-// cars[0] = 'Porsche'
-// cars[cars.length] = 'Mazda'
-// console.log(cars)
-
-// Циклы
-
-const cars = ['Мазда', 'BMW', 'Ford']
-
-// for (let i = 0; i < cars.length; i++) {
-// const car = cars[i]
-// console.log(car)
-// }
-for (let car of cars) {
-console.log(car)
-}
-
-// Объекты
